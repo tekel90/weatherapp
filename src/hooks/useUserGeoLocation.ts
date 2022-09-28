@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 
-const useUserGeoLocaton = () => {
+const useUserGeoLocation = () => {
 
     const [location, setLocation] = useState({latitude: 0, longitude: 0})
     
@@ -20,4 +20,4 @@ const useUserGeoLocaton = () => {
     return location
 }
 
-export default useUserGeoLocaton
+export default useUserGeoLocation

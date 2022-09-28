@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
-import useUserGeoLocaton from '../hooks/useUserGeoLocaton';
+import Header from '../components/Header';
+import useUserGeoLocation from '../hooks/useUserGeoLocation';
 import getWeatherInfoByCity from '../services/getWeatherInfoByCity';
 import getWeatherInfoByGeo from '../services/getWeatherInfoByGeo';
 
 const WeatherAppPage = () => {
 
-    const location = useUserGeoLocaton()
+    const location = useUserGeoLocation()
     useEffect(() => {
         
         getWeatherInfoByCity().then(data => console.log('city',data))
@@ -14,7 +15,9 @@ const WeatherAppPage = () => {
     
 
     return (
-        <div>Weather App Main Page</div>
+        <div className='weatherApp'>
+            <Header />
+        </div>
     );
 }
 

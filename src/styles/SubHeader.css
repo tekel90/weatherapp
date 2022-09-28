@@ -1,0 +1,7 @@
+.SubHeaderComponent{
+    padding: 2rem;
+    text-align: left;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--text-color);
+}

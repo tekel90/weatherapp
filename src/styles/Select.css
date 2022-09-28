@@ -1,0 +1,5 @@
+.selectComponent {
+    border-radius: var(--main-border-radius);
+    margin-bottom: 1rem;
+    width: 60%;
+}
